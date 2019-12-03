@@ -19,6 +19,4 @@ FROM gcr.io/distroless/static:nonroot
 WORKDIR /
 COPY --from=builder /workspace/server .
 
-USER nonroot:nonroot
-
 ENTRYPOINT ["/server"]
